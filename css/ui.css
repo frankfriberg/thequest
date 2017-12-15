@@ -1,0 +1,20 @@
+.container.ui, .col {
+  text-align: center;
+  color: #FFF;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  background-color: #623693;
+  border-radius: .5rem; }
+
+.col .col {
+  background-color: #41D6B7; }
+
+.row.row--nested {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.row--nested .col {
+  margin-top: 0; }

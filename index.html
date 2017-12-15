@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Squid UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <section id="typography">
+      <div class="container">
+        <h1>Typography</h1>
+
+        <h2>Headings</h2>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+
+        <h2>Paragraph</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+      </div>
+    </section>
+    <section id="layout">
+      <div class="container">
+        <h1>Layout</h1>
+        <h2>Containers</h2>
+      </div>
+      <div class="container ui">
+        Normal container <code class="prettyprint">class="container"</code>
+      </div>
+      <div class="container ui container--full">
+        Full width container <code class="prettyprint">class="container--full"</code>
+      </div>
+      <div class="container ui container--small">
+        Small width container <code class="prettyprint">class="container--small"</code>
+      </div>
+      <div class="container ui container--large">
+        Large width container <code class="prettyprint">class="container--large"</code>
+      </div>
+
+      <div class="container">
+        <h2>Grid</h2>
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+
+        <div class="row">
+          <div class="col col--one-half">col--one-half</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+
+        <div class="row">
+          <div class="col col--one-fourths">col--one-fourth</div>
+          <div class="col col--one-half">col--one-half</div>
+          <div class="col col--one-fourths">col--one-fourth</div>
+        </div>
+
+        <div class="row">
+          <div class="col col--one-third">col--one-third</div>
+          <div class="col col--one-third">col--one-third</div>
+          <div class="col col--one-third">col--one-third</div>
+        </div>
+
+        <div class="row">
+          <div class="col col--one-fifth">col--one-fifth</div>
+          <div class="col col--one-fifth">col--one-fifth</div>
+          <div class="col col--three-fifths">col--three-fifths</div>
+        </div>
+
+        <div class="row">
+          <div class="col col--two-sixths">col--two-sixths</div>
+          <div class="col col--one-sixth">col--one-sixth</div>
+          <div class="col col--two-sixths">col--two-sixths</div>
+          <div class="col col--one-sixth">col--one-sixth</div>
+        </div>
+
+        <h3>Nesting</h3>
+        <div class="row">
+          <div class="row row--nested col col--one-half">
+            <div class="col col--one-fourth">col--one-fourth</div>
+            <div class="col col--one-fourth">col--one-fourth</div>
+            <div class="col col--one-fourth">col--one-fourth</div>
+            <div class="col col--one-fourth">col--one-fourth</div>
+          </div>
+          <div class="row row--nested col col--one-half">
+            <div class="col col--one-third">col--one-third</div>
+            <div class="col col--one-third">col--one-third</div>
+            <div class="col col--one-third">col--one-third</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="elements" class="container">
+      <h1>Elements</h1>
+      <section id="buttons">
+        <h2>Buttons</h2>
+        <h3>Default buttons</h3>
+        <div class="buttons">
+          <button>Button</button>
+          <button type="submit">Submit button</button>
+          <a href="#" class="button">Link button</a>
+          <input type="button" value="Input button">
+          <input type="submit" value="Input submit button">
+          <input type="reset" value="Reset Button">
+        </div>
+        <h3>Alternative buttons</h3>
+        <div class="buttons alternative">
+          <button class="button--alt">Button</button>
+          <button class="button--alt" type="submit">Submit button</button>
+          <a href="#" class="button button--alt">Link button</a>
+          <input class="button--alt" type="button" value="Input button">
+          <input class="button--alt" type="submit" value="Input submit button">
+          <input class="button--alt" type="reset" value="Reset Button">
+        </div>
+        <h3>Colored buttons</h3>
+        <div class="buttons colored">
+          <button class="button--success">Button</button>
+          <button class="button--error" type="submit">Submit button</button>
+          <a class="button button--warning" href="#">Link button</a>
+          <input class="button--info" type="button" value="Input button">
+          <input class="" type="submit" value="Input submit button">
+          <input class="button--error" type="reset" value="Reset Button">
+        </div>
+      </section>
+
+      <section id="inputs">
+        <h2>Inputs</h2>
+        <input type="text" name="text" value="" placeholder="Text">
+        <label for="text">Text</label>
+
+        <input type="email" name="email" value="" placeholder="Email">
+        <label for="email">Email</label>
+
+        <input type="number" name="number" value="">
+        <label for="number">Number</label>
+
+        <input type="password" name="password" value="">
+        <label for="password">Password</label>
+
+        <input type="tel" name="tel" value="">
+        <label for="tel">Tel</label>
+
+        <label for="search">Search</label>
+        <input type="search" name="search" value="">
+
+        <label for="url">URL</label>
+        <input type="url" name="url" value="">
+
+        <label for="color">Color</label>
+        <input type="colro" name="color" value="">
+
+        <label for="date">Date</label>
+        <input type="date" name="date" value="">
+
+        <label for="datetime-local">Datetime</label>
+        <input type="datetime-local" name="datetime-local" value="">
+
+        <label for="month">Month</label>
+        <input type="month" name="month" value="">
+
+        <label for="week">Week</label>
+        <input type="week" name="week" value="">
+
+        <label for="time">Time</label>
+        <input type="time" name="time" value="">
+
+        <input type="file" name="file" value="">
+        <label for="file">File</label>
+
+        <label for="range">Range</label>
+        <input type="range" name="range" value="">
+
+        <input id="box1" type="checkbox" name="checkbox">
+        <label for="box1">Checkbox 1</label>
+        <input id="box2" type="checkbox" name="checkbox">
+        <label for="box2">Checkbox 2</label>
+        <input id="box3" type="checkbox" name="checkbox">
+        <label for="box3">Checkbox 3</label>
+
+        <input id="radio1" type="radio" name="radio">
+        <label for="radio1">Radio 1</label>
+        <input id="radio2" type="radio" name="radio">
+        <label for="radio2">Radio 2</label>
+        <input id="radio3" type="radio" name="radio">
+        <label for="radio3">Radio 3</label>
+
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </section>
+    </section>
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+  </body>
+</html>
